@@ -1,0 +1,21 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "test",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "haoxin",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "koa": "~0.1.1",
+    "co-views": "~0.1.0",
+    "co-body": "0.0.1",
+    "koa-route": "~1.0.2",
+    "swig": "~1.2.2"
+  }
+}
