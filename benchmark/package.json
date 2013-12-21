@@ -1,0 +1,14 @@
+{
+  "name": "benchmark",
+  "version": "0.0.0",
+  "description": "",
+  "main": "run.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "haoxin",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "supertest": "~0.8.2"
+  }
+}
