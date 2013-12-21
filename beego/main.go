@@ -8,5 +8,6 @@ import (
 
 func main() {
 	beego.RESTRouter("/item", &service.Item{})
+	beego.SetStaticPath("/", "static")
 	beego.Run()
 }

@@ -16,7 +16,7 @@ exports.index = function* () {
 	}
 	this.body = yield render('index', { index: {
 		title: 'node-app-lab',
-		description: '',
+		description: 'hello, hahaha',
 		items: items
 	}})
 }

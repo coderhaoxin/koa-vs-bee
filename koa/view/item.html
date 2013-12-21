@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<title>{{ title }}</title>
+	<h1>koa vs bee</h1>
+	<p>{{ description }}</p>
+	{% for eachItem in items %}
+		<ul>
+			<li>{{ eachItem.id }}</li>
+			<li>{{ eachItem.name }}</li>
+			<li>{{ eachItem.quantity }}</li>
+			<li>{{ eachItem.price }}</li>
+			<li>{{ eachItem.createTime }}</li>
+		</ul>
+	{% endfor%}
+</html>
