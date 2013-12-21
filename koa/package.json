@@ -13,9 +13,10 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "koa": "~0.1.1",
-    "co-views": "~0.1.0",
     "co-body": "0.0.1",
+    "co-views": "~0.1.0",
     "koa-route": "~1.0.2",
+    "koa-static-cache": "~0.1.1",
     "swig": "~1.2.2"
   }
 }
