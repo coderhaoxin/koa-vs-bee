@@ -15,8 +15,8 @@ for (var x = 0; x < times; x++) {
 		} else {
 			count++
 			if (count === times) {
+				console.log(res.text)
 				console.log('due (s): ', (Date.now() - startTime) / 1000)
-				console.log(res.body)
 			}
 		}
 	})

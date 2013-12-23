@@ -1,5 +1,5 @@
 var request = require('supertest')
-request = request('http://localhost:8080')
+request = request('http://localhost:3000')
 
 var times = 1000
 var startTime = Date.now()

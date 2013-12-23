@@ -9,17 +9,17 @@
 * node 0.11.9
 
 ### koa
-* get: 1.28s
-* post: 1.32s
+* get:    1.28s
+* post:   1.32s
 * static: 3.29s
-* view: 1.42s
+* view:   1.42s
 
 * code lines: 50
 
 ### beego
-* get:
-* post:
+* get:    0.42s
+* post:   0.47s
 * static:
-* view
+* view:
 
 * code lines:
