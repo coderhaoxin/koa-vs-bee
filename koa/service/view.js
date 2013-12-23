@@ -1,12 +1,16 @@
 var view   = require('co-views')
-var render = view('../view', {
+var render = view('view', {
 	map: { html: 'swig' }
 })
 
 exports.index = function* () {
-	var items = []
-	for (var i = 0; i < 10; i++) {
-		items.push({
+	var data = {
+		title: 'node-app-lab',
+		description: 'hello, hahaha',
+		items: []
+	}
+	for (var i = 0; i < 100; i++) {
+		data.items.push({
 			id: i,
 			name: 'tea',
 			quantity: 100 + i,
@@ -14,9 +18,5 @@ exports.index = function* () {
 			createTime: Date.now()
 		})
 	}
-	this.body = yield render('index', { index: {
-		title: 'node-app-lab',
-		description: 'hello, hahaha',
-		items: items
-	}})
+	this.body = yield render('item', data)
 }
