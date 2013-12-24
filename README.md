@@ -19,7 +19,7 @@
 ### beego
 * get:    0.42s
 * post:   0.47s
-* static:
-* view:
+* static: 0.43s
+* view:   1.27s
 
-* code lines:
+* code lines: 75
