@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<title>{{ .title }}</title>
+	<h1>koa vs bee</h1>
+	<p>{{ .description }}</p>
+	{{ range .items }}
+		<ul>
+			<li>{{ .Id }}</li>
+			<li>{{ .Name }}</li>
+			<li>{{ .Quantity }}</li>
+			<li>{{ .Price }}</li>
+			<li>{{ .CreateTime }}</li>
+		</ul>
+	{{ end }}
+</html>

@@ -5,22 +5,16 @@ import (
 	"time"
 
 	"github.com/astaxie/beego"
-)
 
-type ItemModel struct {
-	Id         int64  `json:id`
-	Name       string `json:name`
-	Quantity   int64  `json:quantity`
-	Price      int64  `json:price`
-	CreateTime int64  `json:createTime`
-}
+	"../model"
+)
 
 type Item struct {
 	beego.Controller
 }
 
 func (this *Item) Get() {
-	item := ItemModel{
+	item := model.Item{
 		Id:         10086,
 		Name:       "tea",
 		Quantity:   100,
@@ -33,7 +27,7 @@ func (this *Item) Get() {
 }
 
 func (this *Item) Post() {
-	var item ItemModel
+	var item model.Item
 	json.Unmarshal(this.Ctx.Input.RequestBody, &item)
 
 	this.Data["json"] = &item
