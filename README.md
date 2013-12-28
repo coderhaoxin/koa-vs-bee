@@ -17,12 +17,12 @@
 * code lines: 50
 
 ### martini
-* get     s
-* post    s
-* static  0.48s
-* view    s
+* get:    0.45s
+* post:   0.55s
+* static: 0.48s
+* view:   2.42s
 
-* code lines:
+* code lines: 83
 
 ### beego
 * get:    0.42s

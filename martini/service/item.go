@@ -1,14 +1,12 @@
 package service
 
 import (
-	// "encoding/json"
-	"time"
 	"fmt"
-
-	"github.com/codegangsta/martini"
-	"github.com/codegangsta/martini-contrib/render"
+	"time"
 
 	"../model"
+
+	"github.com/codegangsta/martini-contrib/render"
 )
 
 func GetItem(r render.Render) {
@@ -23,10 +21,7 @@ func GetItem(r render.Render) {
 	r.JSON(200, item)
 }
 
-func PostItem(r render.Render, context martini.Context) {
-	fmt.Println(context)
-	// var item model.Item
-	// json.Unmarshal(this.Ctx.Input.RequestBody, &item)
-
-	r.JSON(200, "item")
+func PostItem(r render.Render, item model.Item) {
+	fmt.Println(item)
+	r.JSON(200, item)
 }
