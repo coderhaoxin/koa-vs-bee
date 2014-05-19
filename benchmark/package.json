@@ -1,14 +1,9 @@
 {
   "name": "benchmark",
-  "version": "0.0.0",
-  "description": "",
-  "main": "run.js",
-  "scripts": {
-    "test": "mocha"
-  },
+  "private": true,
   "author": "haoxin",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "dependencies": {
-    "supertest": "~0.8.2"
+    "supertest": "*"
   }
 }
