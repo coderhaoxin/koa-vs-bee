@@ -1,14 +1,13 @@
 'use strict';
 
 var request = require('supertest');
-request = request('http://localhost:3000');
 
-var times = 1000,
+var times = 100,
   startTime = Date.now(),
   count = 0;
 
 for (var x = 0; x < times; x++) {
-  request
+  request('http://localhost:3000')
     .get('/index.html')
     .expect(200)
     .end(function(err, res) {
@@ -17,8 +16,8 @@ for (var x = 0; x < times; x++) {
       } else {
         count++;
         if (count === times) {
-          console.log('due (s): ', (Date.now() - startTime) / 1000);
-          console.log(res.text);
+          console.log('due (ms): ', (Date.now() - startTime));
+          // console.log(res.text);
         }
       }
     });

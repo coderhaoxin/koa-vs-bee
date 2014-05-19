@@ -1,27 +1,25 @@
 ## koa-vs-martini-vs-bee
 
 ### environment
-* ubuntu 13.10 64bit
-* mem: 4G
-* disk: sata
+* mac air 2013 (11)
 *
 * go 1.2
-* node 0.11.9
+* node 0.11.13
 
 ### koa - 0.6.1
-* get:    1.28s
-* post:   1.32s
-* static: 3.29s
-* view:   1.42s
+* get:    172 ms
+* post:   182 ms
+* static: 180 ms
+* view:   272 ms
 
 ### martini
-* get:    0.45s
-* post:   0.55s
-* static: 0.48s
-* view:   2.42s
+* get:    135 ms
+* post:   135 ms
+* static: 132 ms
+* view:   403 ms
 
 ### beego
-* get:    0.42s
-* post:   0.47s
-* static: 0.43s
-* view:   1.27s
+* get:    115 ms
+* post:   116 ms
+* static: 109 ms
+* view:   192 ms

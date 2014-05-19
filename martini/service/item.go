@@ -6,7 +6,7 @@ import (
 
 	"../model"
 
-	"github.com/codegangsta/martini-contrib/render"
+	"github.com/martini-contrib/render"
 )
 
 func GetItem(r render.Render) {
